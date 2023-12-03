@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#main-menu .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#main-menu button {
+    padding: 10px;
+}
+
+.score-display {
+    display: flex;
+    align-items: center;
+}
+
+.bar-container {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+}
+
+#category-view button {
+    margin: 10px;
+    padding: 10px;
+}
+
+.slider {
+    width: 300px;
+    margin: 15px 0;
+}
+
+.button-group {
+    text-align: center;
+}
+
+.button-group button {
+    margin: 0 10px;
+}

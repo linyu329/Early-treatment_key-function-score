@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>能力評估</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <div class="menu-item">
+            <button onclick="showCategory('grossMotor')">粗動作</button>
+            <div id="grossMotor-score" class="score-display"></div>
+        </div>
+        <div class="menu-item">
+            <button onclick="showCategory('fineMotor')">細動作</button>
+            <div id="fineMotor-score" class="score-display"></div>
+        </div>
+        <div class="menu-item">
+            <button onclick="showCategory('languageSkills')">語言能力</button>
+            <div id="languageSkills-score" class="score-display"></div>
+        </div>
+        <div class="menu-item">
+            <button onclick="showCategory('cognitiveSkills')">認知能力</button>
+            <div id="cognitiveSkills-score" class="score-display"></div>
+        </div>
+        <div class="menu-item">
+            <button onclick="showCategory('socialEmotionalSkills')">社交情感能力</button>
+            <div id="socialEmotionalSkills-score" class="score-display"></div>
+        </div>
+    </div>
+
+    <div id="category-view" style="display:none;">
+        <h2 id="category-title"></h2>
+        <div id="questions"></div>
+        <div class="button-group">
+            <button onclick="previousCategory()">回到上一題</button>
+            <button onclick="nextCategory()">繼續作答</button>
+            <button onclick="displayScores()" style="display:none;">提交分數</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
